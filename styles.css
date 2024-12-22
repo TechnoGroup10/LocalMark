@@ -1,0 +1,40 @@
+/* Custom Header Styles */
+header {
+    background-color: #facc15; /* Custom yellow */
+}
+
+/* Hero Section */
+.hero-text {
+    color: #374151; /* Gray for text */
+}
+
+/* Produk Unggulan */
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111827; /* Dark gray */
+    color: #f3f4f6; /* Light gray text */
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
