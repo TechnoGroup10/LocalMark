@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+  <title>
+    Giftos - FAQ
+  </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .heading_container {
+      position: relative; /* Posisi relatif untuk memungkinkan latar belakang tambahan */
+      text-align: center; /* Pusatkan teks */
+    }
+
+    .heading_container h2 {
+      position: relative; /* Posisi relatif untuk berada di atas latar belakang */
+      z-index: 2; /* Prioritaskan di atas semua elemen lain */
+      background-color: #004d00; /* Warna hijau tua */
+      color: white; /* Warna teks */
+      padding: 20px 40px; /* Jarak dalam */
+      border-radius: 10px; /* Sudut membulat */
+      display: inline-block; /* Membuat background mengikuti panjang teks */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Memberikan efek bayangan */
+    }
+
+    .heading_container::before {
+      content: ''; /* Membuat elemen tambahan untuk latar belakang kedua */
+      position: absolute; /* Posisi absolut agar berada di belakang teks */
+      top: 0; /* Posisi awal dari atas */
+      left: 50%; /* Pusatkan horizontal */
+      transform: translateX(-50%) translateY(-10px); /* Pusatkan dan tambahkan offset vertikal */
+      background-color: #AABFAA; /* Warna kuning cerah */
+      width: 55%; /* Lebar lebih besar dari teks utama */
+      height: 110%; /* Tinggi lebih besar dari teks utama */
+      border-radius: 15px; /* Sudut membulat lebih besar */
+      z-index: 1; /* Posisi di bawah teks utama */
+    }
+
+    .faq_section {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+
+    .faq-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .faq-item {
+      flex: 1 1 calc(33.333% - 20px);
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .faq-question {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .faq-answer {
+      font-size: 16px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .faq-item {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .faq-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <img src="images/logo.png" alt="Giftos Logo" style="height: 110px; margin-right: 150px;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="search-container">
+            <input type="text" placeholder="Search..." id="search-box">
+            <button type="button" onclick="search()">
+              <img src="https://img.icons8.com/material-outlined/24/search--v1.png" alt="Search">
+            </button>
+          </div>
+          <div class="user_option">
+            <a href="login.html">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>Login</span>
+            </a>
+            <a href="cart.html">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+  <!-- end hero area -->
+
+  <!-- FAQ Section -->
+  <section class="faq_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-box">
+        <div class="faq-item">
+          <h5 class="faq-question">How do I change my account email?</h5>
+          <p class="faq-answer">You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.</p>
+        </div>
+        <div class="faq-item">
+          <h5 class="faq-question">What should I do if my payment fails?</h5>
+          <p class="faq-answer">If your payment fails, you can use the COD (Cash on Delivery) option, if available. If your payment is debited from your account within 7-10 days, it will be credited back.</p>
+        </div>
+        <div class="faq-item">
+          <h5 class="faq-question">What is your cancellation policy?</h5>
+          <p class="faq-answer">You can cancel an order before it is packed/shipped status. Any amount paid will be credited into the same payment mode used during payment.</p>
+        </div>
+        <div class="faq-item">
+          <h5 class="faq-question">How do I check order delivery status?</h5>
+          <p class="faq-answer">Please go to the 'My Orders' section under the main menu of App/Web/M-site to check your order status.</p>
+        </div>
+        <div class="faq-item">
+          <h5 class="faq-question">What is Instant Refunds?</h5>
+          <p class="faq-answer">Upon successfully pickup of the return product at your doorstep, Mytra will instantly initiate the refund to your source account or chosen method of refund. Instant Refund is not available for a few select pin codes and for all self-ship returns.</p>
+        </div>
+        <div class="faq-item">
+          <h5 class="faq-question">How do I apply a coupon on my order?</h5>
+          <p class="faq-answer">You can apply a coupon on the cart page before order placement. The complete list of your saved and valid coupons will be available in the 'My Coupons' tab of App/Web/M-site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end FAQ section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
