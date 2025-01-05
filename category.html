@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Page</title>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .hero_area {
+      margin-bottom: 50px;
+    }
+
+    .category-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .category-title {
+      font-size: 36px;
+      color: #FFA500;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .category-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .category-column {
+      width: 30%;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .category-column h3 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .category-column h3 img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .category-column h3 span {
+      font-weight: bold;
+      color: #FFA500;
+    }
+
+    .category-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .category-column ul li {
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 45%;
+      padding: 10px;
+      border: 1px solid #FFA500;
+      border-radius: 8px;
+      color: #333;
+    }
+
+    .summary-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .summary-card {
+      width: 30%;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .summary-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .summary-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .summary-card p {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <img src="images/logo.png" alt="Giftos Logo" style="height: 110px; margin-right: 150px;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="search-container">
+            <input type="text" placeholder="Search..." id="search-box">
+            <button type="button" onclick="search()">
+              <img src="https://img.icons8.com/material-outlined/24/search--v1.png" alt="Search">
+            </button>
+          </div>
+          <div class="user_option">
+            <a href="login.html">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>Login</span>
+            </a>
+            <a href="cart.html">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <div class="category-container">
+    <h1 class="category-title">Kategori</h1>
+
+    <div class="category-section">
+      <div class="category-column">
+        <h3>
+          <img src="images/diet.png" alt="Makanan"> Makanan <span>&#9660;</span>
+        </h3>
+        <ul>
+          <li>Rendang</li>
+          <li>Soto</li>
+          <li>Aneka Gulai</li>
+          <li>Aneka Daging</li>
+          <li>Talua Balenggek</li>
+          <li>Aneka Nasi</li>
+          <li>Dendeng</li>
+          <li>Aneka Ayam</li>
+          <li>Aneka Ikan</li>
+          <li>Mi Goreng</li>
+        </ul>
+      </div>
+      <div class="category-column">
+        <h3>
+          <img src="images/cocktail.png" alt="Minuman"> Minuman <span>&#9660;</span>
+        </h3>
+        <ul>
+          <li>Kopi</li>
+          <li>Aia Aka</li>
+          <li>Teh Talua</li>
+          <li>Cindua</li>
+          <li>Susu</li>
+          <li>Jamu</li>
+        </ul>
+      </div>
+      <div class="category-column">
+        <h3>
+          <img src="images/kerjainan.png" alt="Kerajinan"> Kerajinan <span>&#9660;</span>
+        </h3>
+        <ul>
+          <li>Alat Musik</li>
+          <li>Meja</li>
+          <li>Perabot</li>
+          <li>Senjata Tradisional</li>
+          <li>Lemari</li>
+          <li>Kursi</li>
+          <li>Mainan Tradisional</li>
+          <li>Pakaian Tradisional</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="summary-section">
+      <div class="summary-card">
+        <img src="images/diet.png" alt="Makanan Icon">
+        <h3>Makanan</h3>
+        <p>(10 makanan)</p>
+      </div>
+      <div class="summary-card">
+        <img src="images/cocktail.png" alt="Minuman Icon">
+        <h3>Minuman</h3>
+        <p>(5 Minuman)</p>
+      </div>
+      <div class="summary-card">
+        <img src="images/kerjainan.png" alt="Kerajinan Icon">
+        <h3>Kerajinan</h3>
+        <p>(15 Kerajinan)</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
