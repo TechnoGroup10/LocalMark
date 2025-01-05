@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Rendang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-detail {
+            display: flex;
+            gap: 20px;
+        }
+
+        .product-images {
+            flex: 1;
+        }
+
+        .product-images img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .product-thumbnails img {
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+
+        .product-info {
+            flex: 2;
+        }
+
+        .product-info h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .stock-info {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #e74c3c;
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quantity input {
+            width: 50px;
+            text-align: center;
+        }
+
+        .add-to-cart {
+            display: inline-block;
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .reviews {
+            margin-top: 40px;
+        }
+
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+        }
+
+        .review h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .review p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .rating {
+            color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-images">
+                <img src="images/rendang.jpg" alt="Rendang">
+                <div class="product-thumbnails">
+                    <img src="https://via.placeholder.com/70" alt="Thumbnail 1">
+                    <img src="https://via.placeholder.com/70" alt="Thumbnail 2">
+                    <img src="https://via.placeholder.com/70" alt="Thumbnail 3">
+                    <img src="https://via.placeholder.com/70" alt="Thumbnail 4">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Rendang</h1>
+                <div class="price">Rp. 150.000 <span class="old-price">Rp. 200.000</span></div>
+                <p class="stock-info">Only 9 item (500 gr) left in stock!</p>
+                <p class="description">Nikmati kelezatan autentik Rendang Minangkabau, hidangan legendaris dengan cita rasa kaya rempah yang dimasak perlahan hingga menghasilkan tekstur empuk dan rasa yang mendalam. Cocok untuk melengkapi santapan Anda dengan kehangatan khas Nusantara!</p>
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <h4>Helena M. <span class="rating">★★★★★</span></h4>
+                <p>Very good</p>
+            </div>
+            <div class="review">
+                <h4>Ann D. <span class="rating">★★★★★</span></h4>
+                <p>Delicious!</p>
+            </div>
+            <div class="review">
+                <h4>Andrew <span class="rating">★★★★</span></h4>
+                <p>Nice</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
