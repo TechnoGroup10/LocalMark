@@ -182,15 +182,19 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="logolocal.png" alt="LocalMark" class="logo">
+            <img src="images/logo.png" alt="LocalMark" class="logo">
             <!-- Replace ... with actual base64 encoded logo SVG -->
         </div>
+        <div><textarea>CARTPAGE</textarea></div>
+        <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
         <div class="search-bar">
             <span class="search-icon">🔍</span>
             <input type="text" placeholder="What do you want eat today...">
         </div>
         <div class="user-profile">
-            <img src="Ellipse1.png" alt="Profile">
+            <img src="images/agency-img.jpg" alt="Profile">
             <span>Anna George</span>
         </div>
     </header>
@@ -207,39 +211,44 @@
         <div class="cart-item">
             <div class="product-info">
                 <input type="checkbox">
-                <img src="food1.jpg" alt="Food 1">
+                <img src="images/rendang.jpg" alt="Food 1">
             </div>
-            <div>Rp </div>
+            <div>Rp 120.000 </div>
             <div class="quantity-controls">
                 <button>-</button>
                 <input type="text" value="1">
                 <button>+</button>
             </div>
-            <div>Rp </div>
+            <div>Rp 120.000 </div>
             <button class="remove-btn">X</button>
         </div>
 
         <div class="cart-item">
             <div class="product-info">
                 <input type="checkbox" checked>
-                <img src="food2.jpg" alt="Food 2">
+                <img src="images/dendeng.jpg" alt="Food 2">
             </div>
-            <div>Rp </div>
+            <div>Rp 75.000 </div>
             <div class="quantity-controls">
                 <button>-</button>
-                <input type="text" value="1">
+                <input type="text" value="2">
                 <button>+</button>
             </div>
-            <div>Rp </div>
+            <div>Rp 150.000 </div>
             <button class="remove-btn">X</button>
         </div>
 
         <div class="cart-footer">
             <div class="total-price">
-                <div>Total: Rp. </div>
+                <div>Total: Rp. 250.000 </div>
                 <div>Disc: Rp. 0</div>
             </div>
-            <button class="checkout-btn">Checkout</button>
+            <button 
+            type="button" 
+            class="checkout-btn" 
+            onclick="window.location.href='/checkout.html';">
+            Checkout
+        </button>
         </div>
     </div>
 </body>

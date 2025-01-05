@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
   <title>
-    Giftos - Wishlist
+    Wishlist
   </title>
 
   <!-- bootstrap core css -->
@@ -98,6 +98,151 @@
       }
     }
   </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .settings-container {
+      display: flex;
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+
+    .sidebar {
+      width: 25%;
+      border-right: 1px solid #ddd;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      color: #004d00;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      color: #004d00;
+      font-weight: bold;
+    }
+
+    .content {
+      width: 75%;
+      padding: 20px;
+    }
+
+    .content h2 {
+      text-align: center;
+      font-size: 24px;
+      color: #004d00;
+      margin-bottom: 30px;
+    }
+
+    .avatar-container {
+      text-align: center;
+    }
+
+    .avatar-container img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .avatar-container h3 {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .avatar-container button {
+      margin-top: 10px;
+      background-color: #004d00;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .avatar-container button:hover {
+      background-color: #003300;
+    }
+
+    .form-section {
+      margin-top: 40px;
+    }
+
+    .form-section h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-section input,
+    .form-section textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .form-buttons button {
+      width: 48%;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-buttons .cancel-btn {
+      background-color: #ddd;
+      color: #333;
+    }
+
+    .form-buttons .cancel-btn:hover {
+      background-color: #bbb;
+    }
+
+    .form-buttons .save-btn {
+      background-color: #004d00;
+      color: #fff;
+    }
+
+    .form-buttons .save-btn:hover {
+      background-color: #003300;
+    }
+  </style>
 </head>
 
 <body>
@@ -124,12 +269,11 @@
             <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonial.html">Testimonial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="testimonial.html">Review</a></li>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="vendor.html">Vendor</a>
+          </li>
           </ul>
           <div class="search-container">
             <input type="text" placeholder="Search..." id="search-box">
@@ -155,39 +299,51 @@
 
   <!-- Wishlist Section -->
   <section class="wishlist-section">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Your Wishlist</h2>
+    <div class="settings-container">
+      <div class="sidebar">
+        <h2>SETTINGS</h2>
+        <ul>
+          <li><a href="user_setting.html" >Profile Setting</a></li>
+          <li><a href="wishlist.html" class="active">Favorite</a></li>
+          <li><a href="admindashboard.html">Admin Dashboard</a></li>
+        </ul>
       </div>
-      <div class="wishlist-box">
-        <!-- Item 1 -->
-        <div class="wishlist-item">
-          <img src="https://via.placeholder.com/300" alt="Wishlist Item 1">
-          <h5 class="wishlist-title">Wishlist Item 1</h5>
-          <p class="wishlist-desc">A brief description of the item.</p>
-          <div class="wishlist-action">
-            <button>Remove from Wishlist</button>
-          </div>
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Your Wishlist</h2>
         </div>
-        <!-- Item 2 -->
-        <div class="wishlist-item">
-          <img src="https://via.placeholder.com/300" alt="Wishlist Item 2">
-          <h5 class="wishlist-title">Wishlist Item 2</h5>
-          <p class="wishlist-desc">A brief description of the item.</p>
-          <div class="wishlist-action">
-            <button>Remove from Wishlist</button>
+        <div class="wishlist-box">
+          <!-- Item 1 -->
+          <div class="wishlist-item">
+            <img src="images/pisang sale.jpg" alt="Wishlist Item 1">
+            <h5 class="wishlist-title">Wishlist Item 1</h5>
+            <p class="wishlist-desc">A brief description of the item.</p>
+            <div class="wishlist-action">
+              <button>Remove from Wishlist</button>
+            </div>
           </div>
-        </div>
-        <!-- Item 3 -->
-        <div class="wishlist-item">
-          <img src="https://via.placeholder.com/300" alt="Wishlist Item 3">
-          <h5 class="wishlist-title">Wishlist Item 3</h5>
-          <p class="wishlist-desc">A brief description of the item.</p>
-          <div class="wishlist-action">
-            <button>Remove from Wishlist</button>
+          <!-- Item 2 -->
+          <div class="wishlist-item">
+            <img src="images/bubuk kopi.jpg" alt="Wishlist Item 2">
+            <h5 class="wishlist-title">Wishlist Item 2</h5>
+            <p class="wishlist-desc">A brief description of the item.</p>
+            <div class="wishlist-action">
+              <button>Remove from Wishlist</button>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="wishlist-item">
+            <img src="images/songket.jpg" alt="Wishlist Item 3">
+            <h5 class="wishlist-title">Wishlist Item 3</h5>
+            <p class="wishlist-desc">A brief description of the item.</p>
+            <div class="wishlist-action">
+              <button>Remove from Wishlist</button>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    
     </div>
   </section>
   <!-- end Wishlist Section -->

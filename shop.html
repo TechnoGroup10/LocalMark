@@ -11,10 +11,10 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
   <title>
-    Giftos
+    Shop
   </title>
 
   <!-- slider stylesheet -->
@@ -33,284 +33,383 @@
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            Giftos
-          </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""></span>
-        </button>
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""></span>
+      </button>
 
-        <div class="collapse navbar-collapse innerpage_navbar" id="navbarSupportedContent">
-          <ul class="navbar-nav  ">
-            <li class="nav-item ">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="shop.html">
-                Shop
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="why.html">
-                Why Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonial.html">
-                Testimonial
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-          <div class="user_option">
-            <a href="">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <span>
-                Login
-              </span>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <img src="images/logo.png" alt="Giftos Logo" style="height: 110px; margin-right: 150px;">
+        <ul class="navbar-nav  ">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
             </a>
-            <a href="">
-              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="shop.html">
+              Shop<span class="sr-only">(current)</span>
             </a>
-            <form class="form-inline ">
-              <button class="btn nav_search-btn" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">
+              FAQ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">
+              Review
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="vendor.html">Vendor</a>
+        </li>
+          <div class="search-container">
+            <input type="text" placeholder="Search..." id="search-box">
+            <button type="button" onclick="search()">
+                <img src="https://img.icons8.com/material-outlined/24/search--v1.png" alt="Search">
+            </button>
+        </ul>
+        <div class="user_option">
+          <a href="login.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span>
+              Login
+            </span>
+          </a>
+          <a href="cartpage.html">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </a>
+          </form>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
     <!-- end header section -->
 
   </div>
   <!-- end hero area -->
 
+
+  <!-- Category Start -->
+ <style>
+  .small-box {
+  max-width: 300px; /* Lebar maksimum kotak */
+  margin: 10auto; /* Pastikan kotak berada di tengah */
+  font-size: 14px; /* Perkecil teks */
+}
+
+.small-box .icon img {
+  width: 70px; /* Ukuran ikon lebih kecil */
+  height: 100px;
+  object-fit: contain;
+}
+
+.small-box h6 {
+  font-size: 16px; /* Ukuran teks judul */
+  margin: 5px 0;
+}
+
+.small-box span {
+  font-size: 12px; /* Ukuran teks deskripsi */
+  color: #666;
+}
+.container-xxl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.row.justify-content-center {
+  justify-content: center;
+}
+</style>
+<!-- Category Start -->
+<div class="container-xxl py-5">
+<div class="container">
+  <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+    <h1 class="mb-3">Ketegori </h1>
+  </div>
+  <div class="row justify-content-center g-4">
+    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+      <a class="cat-item d-block bg-light text-center rounded p-3 small-box" href="category.html">
+        <div class="rounded p-3">
+          <div class="icon mb-2">
+            <img class="img-fluid" src="images/cocktail.png" alt="Icon">
+          </div>
+          <h6>Minuman</h6>
+          <span>123 Properties</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+      <a class="cat-item d-block bg-light text-center rounded p-3 small-box" href="category.html">
+        <div class="rounded p-3">
+          <div class="icon mb-2">
+            <img class="img-fluid" src="images/diet.png" alt="Icon">
+          </div>
+          <h6>Makanan</h6>
+          <span>123 Properties</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+      <a class="cat-item d-block bg-light text-center rounded p-3 small-box" href="category.html">
+        <div class="rounded p-3">
+          <div class="icon mb-2">
+            <img class="img-fluid" src="images/kerjainan.png" alt="Icon">
+          </div>
+          <h6>Kerajinan</h6>
+          <span>123 Properties</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Category End -->
+ <!--shop-->
+<style>
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #8b0000;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        color: #333;
+        margin-top: 0;
+    }
+
+    h4{
+      text-align: left;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .product-item {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .product-price {
+          color: #fcb900;
+          font-size: 18px;
+          margin: 10px 0;
+          text-align: left;
+      }
+
+      .rating {
+          color: #ffa500;
+          margin: 5px 0;
+          padding: 0;
+          align-items: left;
+      }
+
+    .product-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .product-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-info h4 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .product-info .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+    }
+
+    .product-info .icons button,
+    .product-info .icons .heart {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .product-info .icons .heart {
+        color: red;
+        font-size: 20px;
+    }
+
+    .product-info .icons button {
+        font-size: 20px;
+        color: #333;
+    }
+
+    .more-menu {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-bottom: 50px;
+      }
+
+      .more-menu button {
+          background-color: #229101;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+      }
+
+      .more-menu button:hover {
+          background-color: #2f8e09;
+      }
+
+</style>
+<div class="container">
+<h2>Produk </h2>
+
+<div class="product-grid">
+    <div class="product-item">
+        <img src="images/rendang.jpg" alt="Rendang">
+        <div class="product-info">
+          <div class="rating">★★★★★</div>
+            <h4>Rendang</h4>
+            <div class="product-price">Rp.</div>
+            <div class="icons" href="cartpage.html">
+                <button>&#128722;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item">
+        <img src="images/bubuk kopi.jpg" alt="Bubuk Kopi">
+        <div class="product-info">
+          <div class="rating">★★★★★</div>
+            <h4>Bubuk Kopi</h4>
+            <div class="product-price">Rp.</div>
+            <div class="icons" href="cartpage.html">
+                <button>&#128722;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item">
+        <img src="images/keripik sanjai.jpg" alt="Keripik Balado">
+        <div class="product-info">
+          <div class="rating">★★★★★</div>
+            <h4>Keripik Balado</h4>
+            <div class="product-price">Rp.</div>
+            <div class="icons" href="cartpage.html">
+                <button>&#128722;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item">
+        <img src="images/songket.jpg" alt="Kain Songket">
+        <div class="product-info">
+          <div class="rating">★★★★★</div>
+            <h4>Kain Songket</h4>
+            <div class="product-price">Rp.</div>
+            <div class="icons" href="cartpage.html">
+                <button>&#128722;</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="product-item">
+      <img src="images/sapu lidi.jpg" alt="Sapu Lidi">
+      <div class="product-info">
+        <div class="rating">★★★★★</div>
+          <h4>Sapu Lidi</h4>
+          <div class="product-price">Rp.</div>
+          <div class="icons" href="cartpage.html">
+              <button>&#128722;</button>
+          </div>
+      </div>
+  </div>
+
+  
+  <div class="product-item">
+    <img src="images/pisang sale.jpg" alt="Pisang Sale">
+    <div class="product-info">
+      <div class="rating">★★★★★</div>
+        <h4>Pisang Sale</h4>
+        <div class="product-price">Rp.</div>
+        <div class="icons" href="cartpage.html">
+            <button>&#128722;</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-item">
+  <img src="images/dendeng.jpg" alt="Dendeng">
+  <div class="product-info">
+    <div class="rating">★★★★★</div>
+      <h4>Dendeng</h4>
+      <div class="product-price">Rp.</div>
+      <div class="icons" href="cartpage.html">
+          <button>&#128722;</button>
+      </div>
+  </div>
+</div>
+
+<div class="product-item">
+  <img src="images/karak kaliang.jpg" alt="Karak Kaliang">
+  <div class="product-info">
+    <div class="rating">★★★★★</div>
+      <h4>Karak Kaliang</h4>
+      <div class="product-price">Rp.</div>
+      <div class="icons" href="cartpage.html">
+          <button>&#128722;</button>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+        </div>
+        <div class="more-menu">
+            <button>more menu</button>
+        </div>
+    </div>
+  <!-- Shop Product End -->
+</div>
+</div>
+<!-- Shop End -->
+
   <!-- shop section -->
 
-  <section class="shop_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Latest Products
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Ring
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $200
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Watch
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $300
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Teddy Bear
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $110
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p4.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Flower Bouquet
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $45
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p5.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Teddy Bear
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $95
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p6.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Flower Bouquet
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $70
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p7.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Watch
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $400
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p8.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Ring
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $450
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View All Products
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- end shop section -->
 
   <!-- info section -->
 
