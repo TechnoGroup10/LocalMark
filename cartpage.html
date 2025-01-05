@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalMark Food Order</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: white;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid rgb(28, 118, 46);
+            border-radius: 25px;
+            font-size: 16px;
+            padding-left: 40px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f0f0f0;
+        }
+
+        .cart-container {
+            margin: 30px auto;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .cart-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+            padding: 20px 0;
+            border-bottom: 2px solid #eee;
+            font-weight: bold;
+        }
+
+        .cart-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+
+        .product-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .product-info img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quantity-controls button {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+        }
+
+        .quantity-controls input {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .remove-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            background: #eee;
+            cursor: pointer;
+        }
+
+        .cart-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .total-price {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .checkout-btn {
+            background: rgb(76, 175, 80);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .cart-header, .cart-item {
+                grid-template-columns: 2fr 1fr 1fr;
+            }
+            
+            .quantity-controls {
+                flex-direction: column;
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logolocal.png" alt="LocalMark" class="logo">
+            <!-- Replace ... with actual base64 encoded logo SVG -->
+        </div>
+        <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="What do you want eat today...">
+        </div>
+        <div class="user-profile">
+            <img src="Ellipse1.png" alt="Profile">
+            <span>Anna George</span>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-header">
+            <div>PRODUCT</div>
+            <div>PRICE</div>
+            <div>QUANTITY</div>
+            <div>TOTAL</div>
+            <div></div>
+        </div>
+
+        <div class="cart-item">
+            <div class="product-info">
+                <input type="checkbox">
+                <img src="food1.jpg" alt="Food 1">
+            </div>
+            <div>Rp </div>
+            <div class="quantity-controls">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+            </div>
+            <div>Rp </div>
+            <button class="remove-btn">X</button>
+        </div>
+
+        <div class="cart-item">
+            <div class="product-info">
+                <input type="checkbox" checked>
+                <img src="food2.jpg" alt="Food 2">
+            </div>
+            <div>Rp </div>
+            <div class="quantity-controls">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+            </div>
+            <div>Rp </div>
+            <button class="remove-btn">X</button>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total-price">
+                <div>Total: Rp. </div>
+                <div>Disc: Rp. 0</div>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
